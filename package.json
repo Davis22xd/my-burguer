@@ -6,6 +6,8 @@
     "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "react-scripts build",
+    "deploy": "aws s3 sync build s3://myburger-pacman",
     "eject": "react-scripts eject"
   },
   "dependencies": {
