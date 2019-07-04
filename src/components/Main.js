@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Burguer from './Burguer/Burguer';
+import Panel from './Panel/Panel'
 
 class Main extends Component {
     render() {
@@ -7,6 +8,7 @@ class Main extends Component {
             <div>
                 <div>
                     <Burguer />
+                    <Panel />
                 </div>
             </div>
         )

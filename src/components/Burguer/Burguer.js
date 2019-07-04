@@ -20,12 +20,13 @@ class Burguer extends Component {
         <Typography className="title" component="h3" gutterBottom>
           ARMA TU HAMBURGUESA
         </Typography>
-        <Typography className="caption" variant="caption" display="block" gutterBottom>
-          {message}
-        </Typography>
         {/* {ingredients && ingredients.map(ingredient => (
                     <Ingredient name={ingredient.name} url={ingredient.url} />
                 ))} */}
+        <Typography className="caption" variant="caption" display="block" gutterBottom>
+          {message}
+        </Typography>
+        
       </div>
     );
   }
