@@ -25,8 +25,8 @@ class Burguer extends Component {
           {message}
         </Typography>
         {ingredients && ingredients.map(ingredient => (
-                    <Ingredient name={ingredient.name} image={ingredient.image} />
-                ))}
+            <Ingredient name={ingredient.name} image={ingredient.image} />
+        ))}
       </div>
     );
   }
