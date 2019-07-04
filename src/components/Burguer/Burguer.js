@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Typography from "@material-ui/core/Typography";
-// import Ingredient from "./Ingredient/Ingredient";
+import Ingredient from "./Ingredient/Ingredient";
+import "../../css/Burguer.css";
 
 class Burguer extends Component {
   constructor(props) {
@@ -16,17 +17,16 @@ class Burguer extends Component {
     const { ingredients } = this.props;
 
     return (
-      <div>
+      <div className="burguer__container">
         <Typography className="title" component="h3" gutterBottom>
           ARMA TU HAMBURGUESA
         </Typography>
-        {/* {ingredients && ingredients.map(ingredient => (
-                    <Ingredient name={ingredient.name} url={ingredient.url} />
-                ))} */}
         <Typography className="caption" variant="caption" display="block" gutterBottom>
           {message}
         </Typography>
-        
+        {ingredients && ingredients.map(ingredient => (
+                    <Ingredient name={ingredient.name} image={ingredient.image} />
+                ))}
       </div>
     );
   }
