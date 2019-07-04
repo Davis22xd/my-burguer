@@ -40,7 +40,7 @@ const ingredients = [
         visible: true
     },
     {
-        disabled: true,
+        disabled: false,
         name: 'Pan tapa baja',
         image: 'https://drive.google.com/uc?id=16e6feKIfCLpV1vhKVG5CmqHQkMdsTfZQ',
         price: 2.00,

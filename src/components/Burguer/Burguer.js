@@ -24,9 +24,16 @@ class Burguer extends Component {
         <Typography className="caption" variant="caption" display="block" gutterBottom>
           {message}
         </Typography>
-        {ingredients && ingredients.map(ingredient => (
-            <Ingredient name={ingredient.name} image={ingredient.image} />
-        ))}
+        {ingredients && ingredients.map(ingredient => {
+          if (ingredient.disabled) {
+            return null;
+          } else {
+            return (
+              <Ingredient name={ingredient.name} image={ingredient.image} />
+            );
+          }
+        }
+        )}
       </div>
     );
   }
